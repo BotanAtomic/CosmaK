@@ -1,15 +1,31 @@
 package cosma.views
 
-import javafx.beans.property.SimpleStringProperty
-import javafx.scene.layout.BorderPane
-import tornadofx.*
+import cosma.configuration.Configuration
+import cosma.theme.Themeable
+import tornadofx.View
+import tornadofx.borderpane
+import tornadofx.onChange
 
-class Root : View() {
-    private val theme = SimpleStringProperty(this, "indigo", config.string("theme"))
+class Root : View(), Themeable {
 
-    override val root : BorderPane by fxml("/views/root.fxml")
+    private val topBar: TopBar = TopBar()
+    private val sidebar: Sidebar = Sidebar()
+
+    override val root = borderpane {
+        top = topBar.root
+        left = sidebar.root
+    }
+
 
     init {
-        println(theme)
+        Configuration.init(config, resources.json("/themes.json"))
+        Configuration.theme.onChange { applyTheme() }
+        applyTheme()
+    }
+
+    override fun applyTheme() {
+        println("Apply theme")
+        topBar.applyTheme()
+        sidebar.applyTheme()
     }
 }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="50.0" prefHeight="50.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="undo" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="30.0" ripplerFill="#1e88e5">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="CHEVRON_LEFT" size="28" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="redo" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="30.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="CHEVRON_RIGHT" size="28" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label fx:id="currentDirectory" layoutX="120.0" layoutY="3.0" prefHeight="50.0" text="Home" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="100.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="search" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="46.0" ripplerFill="#1e88e5">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="MAGNIFY" size="24" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="share" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="46.0" ripplerFill="#1e88e5">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="SHARE_VARIANT" size="24" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="delete" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="46.0" ripplerFill="#1e88e5">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="DELETE" size="24" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="terminal" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="46.0" ripplerFill="#1e88e5">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="CONSOLE" size="24" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="sort" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="46.0" ripplerFill="#1e88e5">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="SORT_ALPHABETICAL" size="24" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="view" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="46.0" ripplerFill="#1e88e5">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="VIEW_MODULE" size="24" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="details" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" prefHeight="38.0" prefWidth="46.0" ripplerFill="#1e88e5">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="DOTS_VERTICAL" size="24" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

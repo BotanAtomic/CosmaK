@@ -17,6 +17,8 @@ repositories {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     compile group: 'no.tornado', name: 'tornadofx', version: '1.7.19'
+    compile group: 'com.jfoenix', name: 'jfoenix', version: '8.0.9'
+    compile group: 'de.jensd', name: 'fontawesomefx', version: '8.9'
 }
 
 compileKotlin {

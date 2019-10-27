@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox maxHeight="50.0" minHeight="50.0" prefHeight="50.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox fx:id="root" alignment="CENTER_LEFT" maxHeight="50.0" prefHeight="50.0" prefWidth="200.0" spacing="5.0">
+        <children>
+            <StackPane minWidth="24.0" prefWidth="24.0">
+                <children>
+                    <SVGPath fx:id="expendIcon" content="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" fill="#575757" />
+                </children>
+            </StackPane>
+        </children>
+        <padding>
+            <Insets left="10.0" />
+        </padding>
+    </HBox>
+</VBox>
