@@ -1,4 +1,4 @@
-package cosma.entity
+package cosma.entities
 
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleStringProperty

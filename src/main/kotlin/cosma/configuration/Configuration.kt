@@ -19,11 +19,14 @@ object Configuration {
         Configuration.themes = themes
 
         theme.set(config.string("theme", "blue"))
-        language.set(config.string("language", "en"))
+        language.set(config.string("language"))
 
-        FX.locale = Locale(language.get())
+        if(language.get() != null) {
+            FX.locale = Locale(language.get())
+            Locale.setDefault(FX.locale)
+        }
 
-        println("Language : ${language.get()}")
+        println("Language : ${Locale.getDefault()}")
         println("Theme : ${theme.get()}")
     }
 
